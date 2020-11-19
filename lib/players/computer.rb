@@ -87,7 +87,7 @@ class Players::Computer < Player
         move = "1"
       end
   #  elsif board.turn_count >= 3
-    else 
+    else
       move = [1,2,3,4,5,6,7,8,9].detect{|cell| board.taken?(cell.to_s) == false}.to_s
 		end
     move
