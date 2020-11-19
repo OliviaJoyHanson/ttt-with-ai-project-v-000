@@ -30,7 +30,7 @@ class Board
   end
 
   def turn_count
-    cells.count("X") + cells.count("O")
+    (cells.count("X") + cells.count("O")) + 1
   end
 
   def taken?(input)
