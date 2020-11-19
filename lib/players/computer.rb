@@ -48,7 +48,7 @@ class Players::Computer < Player
         move = "3"
       elsif board.position("5") != " " && board.position("3") != " " && board.position("5") == board.position("3") && !board.taken?("7")
         move = "7"
-      if board.position("1") != " " && board.position("3") != " " && board.position("1") == board.position("3") && !board.taken?("2")
+      elsif board.position("1") != " " && board.position("3") != " " && board.position("1") == board.position("3") && !board.taken?("2")
         move = "2"
       elsif board.position("1") != " " && board.position("7") != " " && board.position("1") == board.position("7") && !board.taken?("4")
         move = "4"
